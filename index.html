@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clientora — cereri de lucrare pentru firme de renovări</title>
+<meta name="description" content="Clientora aduce firmelor de renovări cereri de lucrare: conținut pe paginile lor, un asistent pe WhatsApp care vorbește cu oamenii, și cererea gata pregătită pentru patron.">
+<style>
+  :root {
+    --galben: #E8B400;
+    --negru: #121212;
+    --text: #1c1c1c;
+    --sters: #6b6b6b;
+    --linie: #e6e4de;
+    --fund: #fdfcfa;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --negru: #f5f3ee; --text: #ece9e2; --sters: #9b9790;
+      --linie: #2a2824; --fund: #121210; --card: #1a1916;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--fund); color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .lat { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 28px 0; border-bottom: 1px solid var(--linie); }
+  .marca { display: flex; align-items: center; gap: 12px; }
+  .semn {
+    width: 38px; height: 38px; border-radius: 10px; background: var(--galben);
+    color: #121212; display: grid; place-items: center;
+    font-weight: 800; font-size: 22px; letter-spacing: -.03em;
+  }
+  .nume { font-weight: 700; font-size: 20px; letter-spacing: -.02em; color: var(--negru); }
+
+  .erou { padding: 72px 0 56px; }
+  h1 {
+    font-size: clamp(32px, 6vw, 52px); line-height: 1.08; letter-spacing: -.035em;
+    margin: 0 0 20px; color: var(--negru); font-weight: 700;
+  }
+  .erou p.mare { font-size: clamp(18px, 2.4vw, 21px); color: var(--sters); margin: 0 0 32px; max-width: 620px; }
+
+  .buton {
+    display: inline-block; background: var(--galben); color: #121212;
+    text-decoration: none; font-weight: 650; font-size: 16px;
+    padding: 13px 26px; border-radius: 10px;
+  }
+  .buton:hover { filter: brightness(.95); }
+
+  section { padding: 52px 0; border-top: 1px solid var(--linie); }
+  h2 { font-size: clamp(22px, 3vw, 28px); letter-spacing: -.025em; margin: 0 0 8px; color: var(--negru); }
+  .sub { color: var(--sters); margin: 0 0 32px; }
+
+  .pasi { display: grid; gap: 28px; }
+  @media (min-width: 720px) { .pasi { grid-template-columns: repeat(3, 1fr); gap: 32px; } }
+  .pas .nr {
+    width: 28px; height: 28px; border-radius: 50%; background: var(--negru); color: var(--fund);
+    display: grid; place-items: center; font-size: 14px; font-weight: 700; margin-bottom: 14px;
+  }
+  .pas h3 { font-size: 17px; margin: 0 0 8px; color: var(--negru); letter-spacing: -.01em; }
+  .pas p { margin: 0; color: var(--sters); font-size: 15.5px; }
+
+  .caseta {
+    background: var(--card); border: 1px solid var(--linie); border-radius: 14px;
+    padding: 26px 28px; margin-top: 8px;
+  }
+  .caseta p:last-child { margin-bottom: 0; }
+
+  ul.puncte { list-style: none; padding: 0; margin: 0; }
+  ul.puncte li { padding-left: 26px; position: relative; margin-bottom: 14px; color: var(--sters); }
+  ul.puncte li::before {
+    content: ""; position: absolute; left: 0; top: 10px;
+    width: 8px; height: 8px; border-radius: 50%; background: var(--galben);
+  }
+  ul.puncte strong { color: var(--text); font-weight: 600; }
+
+  .contact a { color: var(--negru); text-decoration: none; border-bottom: 2px solid var(--galben); }
+  .contact p { margin: 0 0 10px; font-size: 18px; }
+
+  footer {
+    border-top: 1px solid var(--linie); padding: 36px 0 60px;
+    color: var(--sters); font-size: 14px; line-height: 1.7;
+  }
+  footer a { color: var(--sters); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="lat marca">
+    <div class="semn">C</div>
+    <div class="nume">Clientora</div>
+  </div>
+</header>
+
+<div class="lat">
+
+  <div class="erou">
+    <h1>Cereri de lucrare pentru firme de renovări.</h1>
+    <p class="mare">
+      Aduc oamenii care caută o renovare, vorbesc cu ei în numele firmei dumneavoastră,
+      și vă trimit doar cererile care merită un telefon.
+    </p>
+    <a class="buton" href="#contact">Discutăm</a>
+  </div>
+
+  <section>
+    <h2>Cum funcționează</h2>
+    <p class="sub">Trei pași, și doi dintre ei nu vă cer nimic.</p>
+
+    <div class="pasi">
+      <div class="pas">
+        <div class="nr">1</div>
+        <h3>Conținut pe paginile dumneavoastră</h3>
+        <p>
+          Filmați cu telefonul pe șantier, atât. Montajul, textele și programarea
+          postărilor le fac eu. Totul apare pe conturile firmei dumneavoastră,
+          nu pe ale mele.
+        </p>
+      </div>
+      <div class="pas">
+        <div class="nr">2</div>
+        <h3>Un asistent răspunde pe WhatsApp</h3>
+        <p>
+          Oamenii scriu la orice oră. Asistentul le răspunde imediat, întreabă ce
+          lucrare vor, ce suprafață, în ce zonă, pentru când — și notează tot,
+          cu cuvintele lor.
+        </p>
+      </div>
+      <div class="pas">
+        <div class="nr">3</div>
+        <h3>Primiți cererea gata pregătită</h3>
+        <p>
+          Numai cele care se potrivesc criteriilor pe care le stabiliți
+          dumneavoastră. Le vedeți pe telefon, într-un tabel care rămâne al firmei,
+          și răspundeți direct de acolo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pentru cine</h2>
+    <p class="sub">Firme de renovări și amenajări interioare din România.</p>
+
+    <ul class="puncte">
+      <li><strong>Firme care pierd cereri</strong> pentru că nu apucă să răspundă la mesaje în timpul zilei, când sunt pe șantier.</li>
+      <li><strong>Firme care răspund la toate</strong> și pierd timp cu oameni care caută cu totul altceva.</li>
+      <li><strong>Firme care plătesc deja pe platforme</strong> unde aceeași cerere ajunge la încă cinci concurenți.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Cum lucrez</h2>
+    <div class="caseta">
+      <p>
+        <strong>Criteriile le scrieți dumneavoastră.</strong> Ce lucrări vreți, ce lucrări nu,
+        în ce zonă, de la ce sumă în sus. Se pot schimba oricând.
+      </p>
+      <p>
+        <strong>Asistentul nu scrie niciodată primul.</strong> Răspunde doar oamenilor care
+        v-au scris lor. Nu se trimit mesaje nesolicitate, niciodată.
+      </p>
+      <p>
+        <strong>Datele rămân ale firmei dumneavoastră.</strong> Conversațiile și cererile stau
+        într-un tabel al firmei, la care aveți acces direct. Eu le prelucrez doar
+        cât să funcționeze serviciul.
+      </p>
+      <p>
+        <strong>Fără abonament la început.</strong> Primele cereri sunt gratuite, ca să vedeți
+        dacă vă sunt de folos înainte să plătiți ceva.
+      </p>
+    </div>
+  </section>
+
+  <!--
+    SECȚIUNEA DE PARTENERI — se adaugă după primul client semnat.
+    Meta cere ca relația dintre Clientora și firma clientului să fie vizibilă pe
+    site-urile amândurora, ca să aprobe numele afișat pe WhatsApp. Aici intră
+    numele firmei și un link către site-ul ei, iar ei pun un link către Clientora.
+
+    <section>
+      <h2>Firme cu care lucrez</h2>
+      <ul class="puncte">
+        <li><strong><a href="...">Numele firmei</a></strong> — renovări interioare, [oraș]</li>
+      </ul>
+    </section>
+  -->
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p class="sub">Răspund la telefon și pe WhatsApp.</p>
+    <p><a href="tel:+40770785215">0770 785 215</a></p>
+    <p><a href="mailto:andrei.robert0787@gmail.com">andrei.robert0787@gmail.com</a></p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="lat">
+    <p>
+      <strong>FUNDEANU ROBERT ANDREI PERSOANĂ FIZICĂ AUTORIZATĂ</strong><br>
+      CUI: 55774432<br>
+      Sediu profesional: Sat Stoina, Comuna Stoina, Strada Principală nr. 111, Jud. Gorj<br>
+      Telefon: 0770 785 215 · Email: andrei.robert0787@gmail.com
+    </p>
+    <p>Clientora este marca sub care îmi desfășor activitatea.</p>
+  </div>
+</footer>
+
+</body>
+</html>
